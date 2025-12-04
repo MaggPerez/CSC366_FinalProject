@@ -1,0 +1,10 @@
+requests
+beautifulsoup4
+pandas
+numpy
+nba_api
+balldontlie
+python-dotenv
+matplotlib
+seaborn
+scipy

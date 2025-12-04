@@ -1,0 +1,101 @@
+id,first_name,last_name,position,height,weight,jersey_number,college,country,draft_year,draft_round,draft_number,team.id,team.conference,team.division,team.city,team.name,team.full_name,team.abbreviation
+1,Alex,Abrines,G,6-6,190,8,FC Barcelona,Spain,2013.0,2.0,32.0,21,West,Northwest,Oklahoma City,Thunder,Oklahoma City Thunder,OKC
+2,Jaylen,Adams,G,6-0,225,10,St. Bonaventure,USA,,,,1,East,Southeast,Atlanta,Hawks,Atlanta Hawks,ATL
+3,Steven,Adams,C,6-11,265,12,Pittsburgh,New Zealand,2013.0,1.0,12.0,11,West,Southwest,Houston,Rockets,Houston Rockets,HOU
+4,Bam,Adebayo,C-F,6-9,255,13,Kentucky,USA,2017.0,1.0,14.0,16,East,Southeast,Miami,Heat,Miami Heat,MIA
+5,DeVaughn,Akoon-Purcell,G-F,6-5,201,44,Illinois State,Trinidad and Tobago,2016.0,,,8,West,Northwest,Denver,Nuggets,Denver Nuggets,DEN
+6,LaMarcus,Aldridge,F,6-11,250,21,University of Texas at Austin,USA,2006.0,1.0,2.0,3,East,Atlantic,Brooklyn,Nets,Brooklyn Nets,BKN
+7,Rawle,Alkins,G,6-5,225,20,Arizona,USA,,,,5,East,Central,Chicago,Bulls,Chicago Bulls,CHI
+8,Grayson,Allen,G,6-3,198,8,Duke,USA,2018.0,1.0,21.0,24,West,Pacific,Phoenix,Suns,Phoenix Suns,PHX
+9,Jarrett,Allen,C,6-9,243,31,Texas,USA,2017.0,1.0,22.0,6,East,Central,Cleveland,Cavaliers,Cleveland Cavaliers,CLE
+10,Al-Farouq,Aminu,F,6-8,220,5,Wake Forest,USA,2010.0,1.0,8.0,25,West,Northwest,Portland,Trail Blazers,Portland Trail Blazers,POR
+11,Justin,Anderson,G-F,6-5,231,10,Virginia,USA,2015.0,1.0,21.0,12,East,Central,Indiana,Pacers,Indiana Pacers,IND
+12,Kyle,Anderson,F,6-8,230,2,UCLA,USA,2014.0,1.0,30.0,29,West,Northwest,Utah,Jazz,Utah Jazz,UTA
+13,Ryan,Anderson,F,6-10,240,31,California,USA,2008.0,1.0,21.0,19,West,Southwest,New Orleans,Pelicans,New Orleans Pelicans,NOP
+14,Ike,Anigbogu,C,6-10,262,13,UCLA,USA,2017.0,2.0,47.0,12,East,Central,Indiana,Pacers,Indiana Pacers,IND
+15,Giannis,Antetokounmpo,F,6-11,243,34,Filathlitikos,Greece,2013.0,1.0,15.0,17,East,Central,Milwaukee,Bucks,Milwaukee Bucks,MIL
+16,Kostas,Antetokounmpo,F,6-10,200,37,Dayton,Greece,2018.0,2.0,60.0,5,East,Central,Chicago,Bulls,Chicago Bulls,CHI
+17,Carmelo,Anthony,F,6-7,238,7,Syracuse,USA,2003.0,1.0,3.0,14,West,Pacific,Los Angeles,Lakers,Los Angeles Lakers,LAL
+18,OG,Anunoby,F,6-7,240,8,Indiana,United Kingdom,2017.0,1.0,23.0,20,East,Atlantic,New York,Knicks,New York Knicks,NYK
+19,Ryan,Arcidiacono,G,6-3,195,51,Villanova,USA,,,,20,East,Atlantic,New York,Knicks,New York Knicks,NYK
+20,Trevor,Ariza,F,6-8,215,8,UCLA,USA,2004.0,2.0,43.0,14,West,Pacific,Los Angeles,Lakers,Los Angeles Lakers,LAL
+21,D.J.,Augustin,G,5-11,183,4,Texas,USA,2008.0,1.0,9.0,14,West,Pacific,Los Angeles,Lakers,Los Angeles Lakers,LAL
+22,Deandre,Ayton,C,7-0,252,5,Arizona,Bahamas,2018.0,1.0,1.0,14,West,Pacific,Los Angeles,Lakers,Los Angeles Lakers,LAL
+23,Dwayne,Bacon,G-F,6-6,221,8,Florida State,USA,2017.0,2.0,40.0,14,West,Pacific,Los Angeles,Lakers,Los Angeles Lakers,LAL
+24,Marvin,Bagley III,F,6-10,235,35,Duke,USA,2018.0,1.0,2.0,30,East,Southeast,Washington,Wizards,Washington Wizards,WAS
+25,Ron,Baker,G,6-4,220,31,Wichita State,USA,,,,20,East,Atlantic,New York,Knicks,New York Knicks,NYK
+26,Wade,Baldwin IV,G,6-4,202,2,Vanderbilt,USA,2016.0,1.0,17.0,15,West,Southwest,Memphis,Grizzlies,Memphis Grizzlies,MEM
+27,Lonzo,Ball,G,6-5,190,2,UCLA,USA,2017.0,1.0,2.0,6,East,Central,Cleveland,Cavaliers,Cleveland Cavaliers,CLE
+28,Mo,Bamba,C,7-0,231,5,Texas,USA,2018.0,1.0,6.0,29,West,Northwest,Utah,Jazz,Utah Jazz,UTA
+29,J.J.,Barea,G,5-10,180,5,Northeastern,Puerto Rico,,,,7,West,Southwest,Dallas,Mavericks,Dallas Mavericks,DAL
+30,Harrison,Barnes,F,6-7,225,40,North Carolina,USA,2012.0,1.0,7.0,27,West,Southwest,San Antonio,Spurs,San Antonio Spurs,SAS
+31,Will,Barton,G,6-5,181,1,Memphis,USA,2012.0,2.0,40.0,28,East,Atlantic,Toronto,Raptors,Toronto Raptors,TOR
+32,Keita,Bates-Diop,F,6-8,229,13,Ohio State,USA,2018.0,2.0,48.0,18,West,Northwest,Minnesota,Timberwolves,Minnesota Timberwolves,MIN
+33,Nicolas,Batum,F-G,6-7,230,33,Le Mans,France,2008.0,1.0,25.0,13,West,Pacific,LA,Clippers,LA Clippers,LAC
+34,Jerryd,Bayless,G,6-3,200,8,Arizona,USA,2008.0,1.0,11.0,17,East,Central,Milwaukee,Bucks,Milwaukee Bucks,MIL
+35,Aron,Baynes,C-F,6-10,260,46,Washington State,Australia,,,,9,East,Central,Detroit,Pistons,Detroit Pistons,DET
+36,Kent,Bazemore,G,6-4,195,9,Old Dominion,USA,,,,26,West,Pacific,Sacramento,Kings,Sacramento Kings,SAC
+37,Bradley,Beal,G,6-4,207,0,Florida,USA,2012.0,1.0,3.0,13,West,Pacific,LA,Clippers,LA Clippers,LAC
+38,Malik,Beasley,G,6-4,187,5,Florida State,USA,2016.0,1.0,19.0,9,East,Central,Detroit,Pistons,Detroit Pistons,DET
+39,Michael,Beasley,F,6-9,235,8,Kansas State,USA,2008.0,1.0,2.0,16,East,Southeast,Miami,Heat,Miami Heat,MIA
+40,Marco,Belinelli,G-F,6-5,220,18,Fortitudo Bologna,Italy,2007.0,1.0,18.0,27,West,Southwest,San Antonio,Spurs,San Antonio Spurs,SAS
+41,Jordan,Bell,F,6-8,216,7,Oregon,USA,2017.0,2.0,38.0,5,East,Central,Chicago,Bulls,Chicago Bulls,CHI
+42,DeAndre',Bembry,F,6-5,210,95,St. Joseph's (PA),USA,2016.0,1.0,21.0,17,East,Central,Milwaukee,Bucks,Milwaukee Bucks,MIL
+43,Dragan,Bender,F,7-1,225,35,Maccabi Tel Aviv,Croatia,2016.0,1.0,4.0,24,West,Pacific,Phoenix,Suns,Phoenix Suns,PHX
+44,Davis,Bertans,F,6-10,225,9,Baskonia,Latvia,2011.0,2.0,42.0,4,East,Southeast,Charlotte,Hornets,Charlotte Hornets,CHA
+45,Patrick,Beverley,G,6-2,180,21,Arkansas,USA,2009.0,2.0,42.0,17,East,Central,Milwaukee,Bucks,Milwaukee Bucks,MIL
+46,Khem,Birch,C,6-8,233,24,UNLV,Canada,,,,27,West,Southwest,San Antonio,Spurs,San Antonio Spurs,SAS
+47,Jabari,Bird,G,6-6,198,26,California,USA,2017.0,2.0,56.0,2,East,Atlantic,Boston,Celtics,Boston Celtics,BOS
+48,Bismack,Biyombo,C,6-8,255,18,Baloncesto Fuenlabrada,DRC,2011.0,1.0,7.0,27,West,Southwest,San Antonio,Spurs,San Antonio Spurs,SAS
+49,Nemanja,Bjelica,F,6-9,234,8,Fenerbahce,Serbia,2010.0,2.0,35.0,10,West,Pacific,Golden State,Warriors,Golden State Warriors,GSW
+50,Antonio,Blakeney,G,6-4,192,9,Louisiana State,USA,,,,5,East,Central,Chicago,Bulls,Chicago Bulls,CHI
+51,Eric,Bledsoe,G,6-1,214,5,Kentucky,USA,2010.0,1.0,18.0,25,West,Northwest,Portland,Trail Blazers,Portland Trail Blazers,POR
+52,Trevon,Bluiett,G-F,6-6,198,5,Xavier,USA,2018.0,,,29,West,Northwest,Utah,Jazz,Utah Jazz,UTA
+53,Bogdan,Bogdanovic,G,6-5,225,10,Fenerbahce,Serbia,2014.0,1.0,27.0,13,West,Pacific,LA,Clippers,LA Clippers,LAC
+54,Bojan,Bogdanovic,F,6-7,226,44,Fenerbahce,Croatia,2011.0,2.0,31.0,20,East,Atlantic,New York,Knicks,New York Knicks,NYK
+55,Jonah,Bolden,F,6-10,220,43,UCLA,Australia,2017.0,2.0,36.0,23,East,Atlantic,Philadelphia,76ers,Philadelphia 76ers,PHI
+56,Isaac,Bonga,G,6-8,180,17,Skyliners Frankfurt,Germany,2018.0,2.0,39.0,28,East,Atlantic,Toronto,Raptors,Toronto Raptors,TOR
+57,Devin,Booker,G,6-5,206,1,Kentucky,USA,2015.0,1.0,13.0,24,West,Pacific,Phoenix,Suns,Phoenix Suns,PHX
+58,Chris,Boucher,F,6-8,200,99,Oregon,Saint Lucia,,,,2,East,Atlantic,Boston,Celtics,Boston Celtics,BOS
+59,Avery,Bradley,G,6-3,180,20,University of Texas at Austin,USA,2010.0,1.0,19.0,14,West,Pacific,Los Angeles,Lakers,Los Angeles Lakers,LAL
+60,Tony,Bradley,C,6-10,248,13,North Carolina,USA,2017.0,1.0,28.0,12,East,Central,Indiana,Pacers,Indiana Pacers,IND
+61,Mikal,Bridges,F,6-6,209,25,Villanova,USA,2018.0,1.0,10.0,20,East,Atlantic,New York,Knicks,New York Knicks,NYK
+62,Miles,Bridges,F,6-7,225,0,Michigan State,USA,2018.0,1.0,12.0,4,East,Southeast,Charlotte,Hornets,Charlotte Hornets,CHA
+63,Isaiah,Briscoe,G,6-3,215,13,Kentucky,USA,,,,22,East,Southeast,Orlando,Magic,Orlando Magic,ORL
+64,Ryan,Broekhoff,G-F,6-6,215,45,Valparaiso,Australia,,,,7,West,Southwest,Dallas,Mavericks,Dallas Mavericks,DAL
+65,Malcolm,Brogdon,G,6-4,229,15,Virginia,USA,2016.0,2.0,36.0,20,East,Atlantic,New York,Knicks,New York Knicks,NYK
+66,Dillon,Brooks,G-F,6-7,225,3,Oregon,Canada,2017.0,2.0,45.0,24,West,Pacific,Phoenix,Suns,Phoenix Suns,PHX
+67,MarShon,Brooks,G,6-5,200,8,Providence,USA,2011.0,1.0,25.0,3,East,Atlantic,Brooklyn,Nets,Brooklyn Nets,BKN
+68,Troy,Brown Jr.,F,6-7,215,7,Oregon,USA,2018.0,1.0,15.0,9,East,Central,Detroit,Pistons,Detroit Pistons,DET
+69,Bruce,Brown,G,6-4,202,11,Miami,USA,2018.0,2.0,42.0,8,West,Northwest,Denver,Nuggets,Denver Nuggets,DEN
+70,Jaylen,Brown,G,6-6,223,7,California,USA,2016.0,1.0,3.0,2,East,Atlantic,Boston,Celtics,Boston Celtics,BOS
+71,Lorenzo,Brown,G,6-5,189,4,North Carolina State,USA,2013.0,2.0,52.0,28,East,Atlantic,Toronto,Raptors,Toronto Raptors,TOR
+72,Sterling,Brown,G,6-5,219,0,Southern Methodist,USA,2017.0,2.0,46.0,14,West,Pacific,Los Angeles,Lakers,Los Angeles Lakers,LAL
+73,Jalen,Brunson,G,6-2,190,11,Villanova,USA,2018.0,2.0,33.0,20,East,Atlantic,New York,Knicks,New York Knicks,NYK
+74,Thomas,Bryant,C,6-9,248,3,Indiana,USA,2017.0,2.0,42.0,6,East,Central,Cleveland,Cavaliers,Cleveland Cavaliers,CLE
+75,Reggie,Bullock,G-F,6-6,205,25,North Carolina,USA,2013.0,1.0,25.0,11,West,Southwest,Houston,Rockets,Houston Rockets,HOU
+76,Trey,Burke,G,6-0,185,3,Michigan,USA,2013.0,1.0,9.0,7,West,Southwest,Dallas,Mavericks,Dallas Mavericks,DAL
+77,Alec,Burks,G,6-5,214,18,Colorado,USA,2011.0,1.0,12.0,16,East,Southeast,Miami,Heat,Miami Heat,MIA
+78,Deonte,Burton,G,6-4,240,30,Iowa State,USA,,,,21,West,Northwest,Oklahoma City,Thunder,Oklahoma City Thunder,OKC
+79,Jimmy,Butler,G-F,6-6,230,10,Marquette,USA,2011.0,1.0,30.0,10,West,Pacific,Golden State,Warriors,Golden State Warriors,GSW
+80,Jose,Calderon,G,6-3,200,81,Tau Ceramica,Spain,,,,28,East,Atlantic,Toronto,Raptors,Toronto Raptors,TOR
+81,Kentavious,Caldwell-Pope,G,6-5,204,3,Georgia,USA,2013.0,1.0,8.0,15,West,Southwest,Memphis,Grizzlies,Memphis Grizzlies,MEM
+82,Isaiah,Canaan,G,6-0,201,0,Murray State,USA,2013.0,2.0,34.0,23,East,Atlantic,Philadelphia,76ers,Philadelphia 76ers,PHI
+83,Clint,Capela,C,6-10,256,30,Elan Chalon,Switzerland,2014.0,1.0,25.0,11,West,Southwest,Houston,Rockets,Houston Rockets,HOU
+84,DeMarre,Carroll,F,6-6,215,9,Missouri,USA,2009.0,1.0,27.0,1,East,Southeast,Atlanta,Hawks,Atlanta Hawks,ATL
+85,Wendell,Carter Jr.,F,6-10,270,34,Duke,USA,2018.0,1.0,7.0,22,East,Southeast,Orlando,Magic,Orlando Magic,ORL
+86,Michael,Carter-Williams,G,6-5,190,11,Syracuse,USA,2013.0,1.0,11.0,22,East,Southeast,Orlando,Magic,Orlando Magic,ORL
+87,Jevon,Carter,G,6-0,200,5,West Virginia,USA,2018.0,2.0,32.0,5,East,Central,Chicago,Bulls,Chicago Bulls,CHI
+88,Vince,Carter,F-G,6-6,220,15,North Carolina,USA,1998.0,1.0,5.0,28,East,Atlantic,Toronto,Raptors,Toronto Raptors,TOR
+89,Alex,Caruso,G,6-5,186,9,Texas A&M,USA,,,,21,West,Northwest,Oklahoma City,Thunder,Oklahoma City Thunder,OKC
+90,Omri,Casspi,F,6-9,225,18,Maccabi Tel Aviv,Israel,2009.0,1.0,23.0,26,West,Pacific,Sacramento,Kings,Sacramento Kings,SAC
+91,Willie,Cauley-Stein,C,7-0,240,00,Kentucky,USA,2015.0,1.0,6.0,23,East,Atlantic,Philadelphia,76ers,Philadelphia 76ers,PHI
+92,Troy,Caupain,G,6-4,210,3,Cincinnati,USA,,,,22,East,Southeast,Orlando,Magic,Orlando Magic,ORL
+93,Tyler,Cavanaugh,F,6-9,238,34,George Washington,USA,,,,1,East,Southeast,Atlanta,Hawks,Atlanta Hawks,ATL
+94,Tyson,Chandler,C,7-0,235,6,Dominguez HS (CA),USA,2001.0,1.0,2.0,20,East,Atlantic,New York,Knicks,New York Knicks,NYK
+95,Wilson,Chandler,F,6-8,235,21,DePaul,USA,2007.0,1.0,23.0,8,West,Northwest,Denver,Nuggets,Denver Nuggets,DEN
+96,Joe,Chealey,G,6-3,190,31,College of Charleston,USA,2018.0,,,4,East,Southeast,Charlotte,Hornets,Charlotte Hornets,CHA
+97,Marquese,Chriss,F,6-9,240,35,Washington,USA,2016.0,1.0,8.0,7,West,Southwest,Dallas,Mavericks,Dallas Mavericks,DAL
+98,Gary,Clark,F,6-6,225,12,Cincinnati,USA,,,,19,West,Southwest,New Orleans,Pelicans,New Orleans Pelicans,NOP
+99,Ian,Clark,G,6-3,175,2,Belmont,USA,,,,10,West,Pacific,Golden State,Warriors,Golden State Warriors,GSW
+100,Jordan,Clarkson,G,6-5,194,00,Missouri,USA,2014.0,2.0,46.0,20,East,Atlantic,New York,Knicks,New York Knicks,NYK
