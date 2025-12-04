@@ -302,3 +302,280 @@ def create_player_visualizations():
     plt.savefig('visualizations/6_weight_by_position.png', dpi=300, bbox_inches='tight')
     print("Saved: visualizations/6_weight_by_position.png")
     plt.close()
+
+    
+
+
+"""
+Create team performance analysis visualizations
+
+Visualizations:
+7. Offensive Rating vs Wins scatter plot
+8. Defensive Rating vs Wins scatter plot
+9. Net Rating vs Win Percentage scatter plot
+10. Team wins bar chart
+"""
+def create_team_performance_visualizations():
+
+    df = pd.read_csv("cleaned_csv/advanced_team_stats_CLEANED.csv")
+    df['WIN_PCT'] = (df['W'] / df['GP']).round(3)
+
+
+    # 7. OFFENSIVE RATING VS WINS
+    plt.figure(figsize=(12, 7))
+    correlation = df['OFF_RATING'].corr(df['W'])
+
+    plt.scatter(df["OFF_RATING"], df["W"], s=100, alpha=0.6, c=df['W'],
+                cmap='RdYlGn', edgecolors='black', linewidth=1)
+    plt.colorbar(label='Wins')
+
+
+
+    # Add trend line
+    z = np.polyfit(df["OFF_RATING"], df["W"], 1)
+    p = np.poly1d(z)
+    plt.plot(df["OFF_RATING"], p(df["OFF_RATING"]), "r--", linewidth=2, alpha=0.8, label='Trend Line')
+
+    plt.xlabel("Offensive Rating (points per 100 possessions)", fontsize=12, fontweight='bold')
+    plt.ylabel("Wins", fontsize=12, fontweight='bold')
+    plt.title(f"Offensive Rating vs Wins (r={correlation:.3f})\n(Strong Positive Correlation: Better Offense = More Wins)",
+              fontsize=14, fontweight='bold', pad=20)
+    plt.grid(True, alpha=0.3)
+    plt.legend()
+
+
+    # Add interpretation text box
+    interpretation = f"Correlation: r={correlation:.3f}\nHigher offensive ratings strongly predict more wins."
+    plt.text(0.02, 0.98, interpretation, transform=plt.gca().transAxes,
+             bbox=dict(boxstyle='round', facecolor='lightgreen', alpha=0.8),
+             verticalalignment='top', fontsize=11, family='monospace')
+
+    plt.tight_layout()
+    plt.savefig('visualizations/7_offense_vs_wins.png', dpi=300, bbox_inches='tight')
+    print("✓ Saved: visualizations/7_offense_vs_wins.png")
+    plt.close()
+
+
+
+    # 8. DEFENSIVE RATING VS WINS
+    plt.figure(figsize=(12, 7))
+    correlation = df['DEF_RATING'].corr(df['W'])
+
+    plt.scatter(df["DEF_RATING"], df["W"], s=100, alpha=0.6, c=df['W'],
+                cmap='RdYlGn', edgecolors='black', linewidth=1)
+    plt.colorbar(label='Wins')
+
+    # Add trend line
+    z = np.polyfit(df["DEF_RATING"], df["W"], 1)
+    p = np.poly1d(z)
+    plt.plot(df["DEF_RATING"], p(df["DEF_RATING"]), "r--", linewidth=2, alpha=0.8, label='Trend Line')
+
+    plt.xlabel("Defensive Rating (points allowed per 100 possessions) - LOWER IS BETTER",
+               fontsize=12, fontweight='bold')
+    plt.ylabel("Wins", fontsize=12, fontweight='bold')
+    plt.title(f"Defensive Rating vs Wins (r={correlation:.3f})\n(Strong Negative Correlation: Better Defense = More Wins)",
+              fontsize=14, fontweight='bold', pad=20)
+    plt.grid(True, alpha=0.3)
+    plt.legend()
+
+
+    # Add interpretation text box
+    interpretation = f"Correlation: r={correlation:.3f}\nLower defensive ratings (better defense) strongly predict more wins."
+    plt.text(0.98, 0.02, interpretation, transform=plt.gca().transAxes,
+             bbox=dict(boxstyle='round', facecolor='lightcoral', alpha=0.8),
+             verticalalignment='bottom', horizontalalignment='right',
+             fontsize=11, family='monospace')
+
+    plt.tight_layout()
+    plt.savefig('visualizations/8_defense_vs_wins.png', dpi=300, bbox_inches='tight')
+    print("✓ Saved: visualizations/8_defense_vs_wins.png")
+    plt.close()
+    
+    
+
+    # 9. NET RATING VS WIN PERCENTAGE
+    plt.figure(figsize=(12, 7))
+    correlation = df['NET_RATING'].corr(df['WIN_PCT'])
+
+    plt.scatter(df["NET_RATING"], df["WIN_PCT"], s=120, alpha=0.7, c=df['W'],
+                cmap='viridis', edgecolors='black', linewidth=1.5)
+    plt.colorbar(label='Total Wins')
+
+    # Add trend line
+    z = np.polyfit(df["NET_RATING"], df["WIN_PCT"], 1)
+    p = np.poly1d(z)
+    plt.plot(df["NET_RATING"], p(df["NET_RATING"]), "r--", linewidth=3, alpha=0.8, label='Trend Line')
+
+
+
+    # the labels and title
+    plt.xlabel("Net Rating (OFF_RATING - DEF_RATING)", fontsize=12, fontweight='bold')
+    plt.ylabel("Win Percentage", fontsize=12, fontweight='bold')
+    plt.title(f"Net Rating vs Win Percentage (r={correlation:.3f})\n**STRONGEST PREDICTOR OF SUCCESS** (Near-Perfect Correlation)",
+              fontsize=14, fontweight='bold', pad=20)
+    plt.grid(True, alpha=0.3)
+    plt.legend()
+
+
+    # Add interpretation text box
+    interpretation = f"Correlation: r={correlation:.3f}\nNet Rating is the single best predictor of team success!"
+    plt.text(0.02, 0.98, interpretation, transform=plt.gca().transAxes,
+             bbox=dict(boxstyle='round', facecolor='gold', alpha=0.9),
+             verticalalignment='top', fontsize=12, family='monospace', fontweight='bold')
+
+    plt.tight_layout()
+    plt.savefig('visualizations/9_net_rating_vs_win_pct.png', dpi=300, bbox_inches='tight')
+    print("✓ Saved: visualizations/9_net_rating_vs_win_pct.png")
+    plt.close()
+
+
+
+    # 10. TEAM WINS BAR CHART
+    plt.figure(figsize=(14, 7))
+    df_sorted = df.sort_values('W', ascending=False)
+    colors_wins = ['green' if w >= df['W'].median() else 'red' for w in df_sorted['W']]
+
+
+    # Create bar chart of team wins
+    plt.bar(df_sorted["TEAM_NAME"], df_sorted["W"], color=colors_wins, edgecolor='black', alpha=0.7)
+    plt.axhline(df['W'].mean(), color='blue', linestyle='--', linewidth=2,
+                label=f'League Average: {df["W"].mean():.1f} wins')
+    
+    
+    # the labels and title
+    plt.xlabel("Team", fontsize=12, fontweight='bold')
+    plt.ylabel("Wins", fontsize=12, fontweight='bold')
+    plt.title("Team Wins (Sorted)\n(Green = Above Median | Red = Below Median)",
+              fontsize=14, fontweight='bold', pad=20)
+    plt.xticks(rotation=90, ha='right')
+    plt.legend()
+    plt.grid(axis='y', alpha=0.3)
+    plt.tight_layout()
+    
+    
+    # saving the figure
+    plt.savefig('visualizations/10_team_wins.png', dpi=300, bbox_inches='tight')
+    print("✓ Saved: visualizations/10_team_wins.png")
+    plt.close()
+
+
+"""
+Create Nikola Jokic career progression visualizations
+
+Visualizations:
+11. Jokic points progression
+12. Jokic rebounds progression
+13. Jokic assists progression
+"""
+def create_jokic_visualizations():
+    
+    # Load cleaned Jokic data
+    df = pd.read_csv("cleaned_csv/Nikola_Jokic_Info_CLEANED.csv")
+    
+    
+    # Convert SEASON_ID to integer year for plotting
+    df["SEASON"] = df["SEASON_ID"].astype(str).str[-2:].astype(int) + 2000
+
+
+
+    # 11. POINTS PROGRESSION
+    plt.figure(figsize=(12, 6))
+    plt.plot(df["SEASON"], df["PTS"], marker="o", linewidth=3, markersize=8, color='red')
+    plt.fill_between(df["SEASON"], df["PTS"], alpha=0.3, color='red')
+    
+    
+    # the labels and title
+    plt.xlabel("Season", fontsize=12, fontweight='bold')
+    plt.ylabel("Total Points", fontsize=12, fontweight='bold')
+    plt.title("Nikola Jokic - Points per Season\n(Consistent Elite Scoring Throughout Career)",
+              fontsize=14, fontweight='bold', pad=20)
+    plt.grid(True, alpha=0.3)
+
+
+    # Add interpretation text box
+    interpretation = f"Career Average: {df['PTS'].mean():.0f} points/season\nPeak: {df['PTS'].max():.0f} points ({df.loc[df['PTS'].idxmax(), 'SEASON']:.0f})"
+    plt.text(0.02, 0.98, interpretation, transform=plt.gca().transAxes,
+             bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.8),
+             verticalalignment='top', fontsize=11, family='monospace')
+
+    plt.tight_layout()
+    
+    
+    # saving the figure
+    plt.savefig('visualizations/11_jokic_points.png', dpi=300, bbox_inches='tight')
+    print("✓ Saved: visualizations/11_jokic_points.png")
+    plt.close()
+
+
+
+    # 12. REBOUNDS PROGRESSION
+    plt.figure(figsize=(12, 6))
+    plt.plot(df["SEASON"], df["REB"], marker="s", linewidth=3, markersize=8, color='blue')
+    plt.fill_between(df["SEASON"], df["REB"], alpha=0.3, color='blue')
+    
+    
+    # titles and labels
+    plt.xlabel("Season", fontsize=12, fontweight='bold')
+    plt.ylabel("Total Rebounds", fontsize=12, fontweight='bold')
+    plt.title("Nikola Jokic - Rebounds per Season\n(Elite Rebounding from Center Position)",
+              fontsize=14, fontweight='bold', pad=20)
+    plt.grid(True, alpha=0.3)
+
+
+    # Add interpretation text box
+    interpretation = f"Career Average: {df['REB'].mean():.0f} rebounds/season\nPeak: {df['REB'].max():.0f} rebounds ({df.loc[df['REB'].idxmax(), 'SEASON']:.0f})"
+    plt.text(0.02, 0.98, interpretation, transform=plt.gca().transAxes,
+             bbox=dict(boxstyle='round', facecolor='lightblue', alpha=0.8),
+             verticalalignment='top', fontsize=11, family='monospace')
+
+    plt.tight_layout()
+    
+    
+    # saving the figure
+    plt.savefig('visualizations/12_jokic_rebounds.png', dpi=300, bbox_inches='tight')
+    print("✓ Saved: visualizations/12_jokic_rebounds.png")
+    plt.close()
+
+
+
+    # 13. ASSISTS PROGRESSION
+    plt.figure(figsize=(12, 6))
+    plt.plot(df["SEASON"], df["AST"], marker="^", linewidth=3, markersize=8, color='green')
+    plt.fill_between(df["SEASON"], df["AST"], alpha=0.3, color='green')
+    
+    
+    # the labels and title
+    plt.xlabel("Season", fontsize=12, fontweight='bold')
+    plt.ylabel("Total Assists", fontsize=12, fontweight='bold')
+    plt.title("Nikola Jokic - Assists per Season\n(Exceptional Playmaking for a Center)",
+              fontsize=14, fontweight='bold', pad=20)
+    plt.grid(True, alpha=0.3)
+
+
+    # Add interpretation text box
+    interpretation = f"Career Average: {df['AST'].mean():.0f} assists/season\nPeak: {df['AST'].max():.0f} assists ({df.loc[df['AST'].idxmax(), 'SEASON']:.0f})\nRare for a center!"
+    plt.text(0.02, 0.98, interpretation, transform=plt.gca().transAxes,
+             bbox=dict(boxstyle='round', facecolor='lightgreen', alpha=0.8),
+             verticalalignment='top', fontsize=11, family='monospace')
+
+    plt.tight_layout()
+    
+    # saving the figure
+    plt.savefig('visualizations/13_jokic_assists.png', dpi=300, bbox_inches='tight')
+    print("Saved: visualizations/13_jokic_assists.png")
+    plt.close()
+
+
+def main():
+    """Generate all enhanced visualizations"""
+    ensure_viz_directory()
+
+    create_player_visualizations()
+    create_team_performance_visualizations()
+    create_jokic_visualizations()
+
+    print("All visualizations complete.")
+
+
+if __name__ == "__main__":
+    main()
