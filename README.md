@@ -1,9 +1,7 @@
 # NBA Analytics: Predicting Team Success Through Advanced Metrics
 
-**Data Science Final Project**
-**Course:** CSC366 - Principles of Data Science
-**Team Members:** Bryant Velasquez, Magdaleno Perez, Howie Gu
-**Date:** December 2025
+- **CSC366 - Principles of Data Science**
+- **Team Members:** Bryant Velasquez, Magdaleno Perez, Howie Gu
 
 ---
 
